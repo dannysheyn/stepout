@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          /* width: 100vw;
+          height: 100vh; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        video {
+          transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+      }
+      
+    
+        canvas {
+          position: absolute;
+        }
+      </style>
+<video id="video" width="1450" height="1080" autoplay muted></video>
+<script src="{{url_for('static', filename='face-api.js')}}" ></script>
+<script src="{{url_for('static', filename='faceScript.js')}}" ></script>
+</body>
+</html>
